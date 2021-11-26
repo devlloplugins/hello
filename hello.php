@@ -13,7 +13,7 @@ if ( is_admin() ) {
         'hello',
         'Hello',
         'hello-text',
-        'http://license.local/api/license-manager/v1',
+        '<YOUR-LICENSE-SITE-URL>/api/license-manager/v1',
         'plugin',
         __FILE__,
     );
