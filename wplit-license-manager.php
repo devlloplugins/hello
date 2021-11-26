@@ -56,7 +56,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
                             $this->product_id = $product_id;
                             $this->product_name = $product_name;
                             $this->text_domain = $text_domain;
-                            $this->api_endpoint = 'http://license.local/api/license-manager/v1';
+                            $this->api_endpoint = '<YOUR-LICENSE-SITE-URL>/api/license-manager/v1';
                             $this->type = $type;
                             $this->plugin_file = $plugin_file;
 
