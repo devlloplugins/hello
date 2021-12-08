@@ -150,7 +150,8 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
 
             $licenseapikey = get_option('license-api-key');
             $licenseemail = get_option('license-email');
-            $product_api_key = '72GmZDL5CcbPMP61Buq9jRYj';
+            $product_api_key = '<PRODUCT-API-KEY>';
+
             if ( ! isset($licenseapikey ) || ! isset( $licenseemail ) ) {
                 // User hasn't saved the license to settings yet. No use making the call.
                 return false;
@@ -159,7 +160,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
             $info = $this->call_api(
                 'info',
                 array(
-                    'p' => '34',
+                    'p' => '<PRODUCT-POST-ID',
                     'k' => $product_api_key,
                     'e' => $licenseemail,
                     'l' => $licenseapikey,
@@ -167,6 +168,38 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
             );
          
             return $info;
+        }
+
+
+        public function get_license_status() {
+
+            $licenseapikey = get_option('license-api-key');
+            $licenseemail = get_option('license-email');
+            $product_api_key = '<PRODUCT-API-KEY>';
+
+            if ( ! isset($licenseapikey ) || ! isset( $licenseemail ) ) {
+                // User hasn't saved the license to settings yet. No use making the call.
+                return false;
+            }
+         
+            $status = $this->call_api(
+                'status',
+                array(
+                    'p' => '<PRODUCT-POST-ID',
+                    'k' => $product_api_key,
+                    'e' => $licenseemail,
+                    'l' => $licenseapikey,
+                )
+            );
+
+           return $status;
+         
+            // if($status){
+            //     print 'active';
+            // } else {
+            //     print 'inactive';
+            // }
+         //   return $status;
         }
 
 
