@@ -64,7 +64,7 @@ function settings_page(){ ?>
     'hello',
     'Hello',
     'hello-text',
-    '<YOUR-SITE-URL>/api/license-manager/v1',
+    '<YOUR-SITE-URL>/api/wp-license-it-api/v1',
     'plugin',
     __FILE__,
     );

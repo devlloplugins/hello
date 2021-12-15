@@ -13,7 +13,7 @@ if ( is_admin() ) {
         'hello',
         'Hello',
         'hello-text',
-        '<YOUR-LICENSE-SITE-URL>/api/license-manager/v1',
+        '<YOUR-LICENSE-SITE-URL>/api/wp-license-it-api/v1',
         'plugin',
         __FILE__,
     );
