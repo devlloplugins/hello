@@ -64,7 +64,7 @@ function settings_page(){ ?>
     'hello',
     'Hello',
     'hello-text',
-    '<YOUR-SITE-URL>/api/wp-license-it-api/v1',
+    '<YOUR-SITE-URL>/api/wplicense-it-api/v1', // ADD YOUR SITE URL TO THIS API URL
     'plugin',
     __FILE__,
     );
