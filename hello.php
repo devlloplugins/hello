@@ -13,7 +13,7 @@ if ( is_admin() ) {
         'hello',
         'Hello',
         'hello-text',
-        'https://test.devlloplugins.com/api/wp-license-it-api/v1',
+        'https://test.devlloplugins.com/api/wp-license-it-api/v1', // CHANGE TO YOUR SITE URL
         'plugin',
         __FILE__,
     );
