@@ -56,7 +56,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
                             $this->product_id = $product_id;
                             $this->product_name = $product_name;
                             $this->text_domain = $text_domain;
-                            $this->api_endpoint = 'https://test.devlloplugins.com/api/wp-license-it-api/v1'; //CHANGE TO YOUR LICENSE SITE URL
+                            $this->api_endpoint = 'https://testserver.devlloplugins.com/api/wp-license-it-api/v1'; //CHANGE TO YOUR LICENSE SITE URL
                             $this->type = $type;
                             $this->plugin_file = $plugin_file;
 
@@ -150,7 +150,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
 
             $licenseapikey = get_option('license-api-key');
             $licenseemail = get_option('license-email');
-            $product_api_key = 'BrLWtlDdlHQXMVKPyoG5rE3r'; // ADD YOUR PRODUCT API KEY
+            $product_api_key = '1dJU7e3O7Vui45Kv2F82dCAD'; // ADD YOUR PRODUCT API KEY
 
             if ( ! isset($licenseapikey ) || ! isset( $licenseemail ) ) {
                 // User hasn't saved the license to settings yet. No use making the call.
@@ -160,7 +160,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
             $info = $this->call_api(
                 'info',
                 array(
-                    'p' => '4', // ADD YOUR PRODUCT POST ID
+                    'p' => '12', // ADD YOUR PRODUCT POST ID
                     'k' => $product_api_key,
                     'e' => $licenseemail,
                     'l' => $licenseapikey,
@@ -175,7 +175,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
 
             $licenseapikey = get_option('license-api-key');
             $licenseemail = get_option('license-email');
-            $product_api_key = 'BrLWtlDdlHQXMVKPyoG5rE3r'; // ADD YOUR PRODUCT API KEY
+            $product_api_key = '1dJU7e3O7Vui45Kv2F82dCAD'; // ADD YOUR PRODUCT API KEY
 
             if ( ! isset($licenseapikey ) || ! isset( $licenseemail ) ) {
                 // User hasn't saved the license to settings yet. No use making the call.
@@ -185,7 +185,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
             $status = $this->call_api(
                 'status',
                 array(
-                    'p' => '4', // ADD YOUR PRODUCT POST ID
+                    'p' => '12', // ADD YOUR PRODUCT POST ID
                     'k' => $product_api_key,
                     'e' => $licenseemail,
                     'l' => $licenseapikey,
