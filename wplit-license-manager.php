@@ -56,7 +56,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
                             $this->product_id = $product_id;
                             $this->product_name = $product_name;
                             $this->text_domain = $text_domain;
-                            $this->api_endpoint = '<YOUR-LICENSE-SITE-URL>/api/wp-license-it-api/v1';
+                            $this->api_endpoint = '<YOUR-LICENSE-SITE-URL>/api/wplicense-it-api/v1'; // ADD YOUR SITE URL TO THIS API URL
                             $this->type = $type;
                             $this->plugin_file = $plugin_file;
 
@@ -150,7 +150,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
 
             $licenseapikey = get_option('license-api-key');
             $licenseemail = get_option('license-email');
-            $product_api_key = '<PRODUCT-API-KEY>';
+            $product_api_key = '<PRODUCT-API-KEY>'; // ADD YOUR PRODUCT API KEY
 
             if ( ! isset($licenseapikey ) || ! isset( $licenseemail ) ) {
                 // User hasn't saved the license to settings yet. No use making the call.
@@ -160,7 +160,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
             $info = $this->call_api(
                 'info',
                 array(
-                    'p' => '<PRODUCT-POST-ID',
+                    'p' => '<PRODUCT-POST-ID>', // ADD YOUR PRODUCT POST ID
                     'k' => $product_api_key,
                     'e' => $licenseemail,
                     'l' => $licenseapikey,
@@ -175,7 +175,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
 
             $licenseapikey = get_option('license-api-key');
             $licenseemail = get_option('license-email');
-            $product_api_key = '<PRODUCT-API-KEY>';
+            $product_api_key = '<PRODUCT-API-KEY>'; // ADD YOUR PRODUCT API KEY
 
             if ( ! isset($licenseapikey ) || ! isset( $licenseemail ) ) {
                 // User hasn't saved the license to settings yet. No use making the call.
@@ -185,7 +185,7 @@ if ( ! class_exists( 'WP_License_It_Client' ) ) {
             $status = $this->call_api(
                 'status',
                 array(
-                    'p' => '<PRODUCT-POST-ID',
+                    'p' => '<PRODUCT-POST-ID>', // ADD YOUR PRODUCT POST ID
                     'k' => $product_api_key,
                     'e' => $licenseemail,
                     'l' => $licenseapikey,
