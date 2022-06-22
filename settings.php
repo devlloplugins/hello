@@ -64,7 +64,7 @@ function settings_page(){ ?>
     'hello',
     'Hello',
     'hello-text',
-    '<YOUR-SITE-URL>/api/wp-license-it-api/v1',
+    'https://test.devlloplugins.com/api/wp-license-it-api/v1', // CHANGE TO YOUR LICENSE SITE URL
     'plugin',
     __FILE__,
     );
