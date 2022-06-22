@@ -2,7 +2,7 @@
 /*
 Plugin Name: Hello World Plugin
 Description: A test plugin that says Hello.
-Version: 1.2
+Version: 1.0
 */
 
 require_once( 'wplit-license-manager.php' );
@@ -13,7 +13,7 @@ if ( is_admin() ) {
         'hello',
         'Hello',
         'hello-text',
-        '<YOUR-LICENSE-SITE-URL>/api/wp-license-it-api/v1',
+        'https://test.devlloplugins.com/api/wp-license-it-api/v1',
         'plugin',
         __FILE__,
     );
